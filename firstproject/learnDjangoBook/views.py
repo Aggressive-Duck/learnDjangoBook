@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render,redirect
 
 # Create your views here.
 from django.http import HttpResponse
@@ -10,3 +10,4 @@ def hello2(request, username):
 def hello4(request, username):
     now = datetime.now()
     return render(request,"hello4.html",locals())
+
